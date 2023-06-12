@@ -100,7 +100,7 @@ void Usage()
 
 void Version()
 {
-  puts("TexturePacker version 2.0.0");
+  puts("TexturePacker version 2.0.1");
 }
 
 } // namespace
