@@ -40,7 +40,6 @@ set(SOURCES md5.cpp
 
 if(WIN32)
   list(APPEND SOURCES Win32/dirent.c)
-  set(HEADERS Win32/dirent.h)
 endif()
 
 set(CMAKE_POSITITION_INDEPENDENT_CODE 1)
@@ -52,8 +51,12 @@ target_include_directories(TexturePacker
                                    ${GIF_INCLUDE_DIR}
                                    ${KODI_SOURCE_DIR}/xbmc
                                    ${CMAKE_CURRENT_SOURCE_DIR}
-                                   ${HEADERS}
                                    ${CMAKE_CURRENT_SOURCE_DIR}/decoder)
+if(WIN32)
+  target_include_directories(TexturePacker SYSTEM
+                                           PRIVATE ${CMAKE_CURRENT_SOURCE_DIR}/Win32)
+endif()
+
 target_link_libraries(TexturePacker
                       PRIVATE ${SYSTEM_LDFLAGS}
                               ${GIF_LIBRARIES}
