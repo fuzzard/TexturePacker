@@ -1,0 +1,97 @@
+# commonly used editors
+# vim
+*.swp
+# Eclipse
+*.project
+*.cproject
+.classpath
+*.sublime-*
+# KDevelop 4
+*.kdev4
+# gedit
+*~
+# CLion
+/.idea
+.vscode/
+# Created in vs2017 when using open folder
+.vs/
+
+# Created in vs2017 when using open folder with cmake tools
+CMakeSettings.json
+
+# Created in vscode when using cmake-tools
+cmake-variants.yaml
+cmake-kits.json
+
+# generated files etc
+.last_success_revision
+*.d
+*.depend
+*.pc
+*.P
+*.[oa]
+*.l[oa]
+*.so
+*.so.*
+*.dylib
+*.lineno
+*.py[co]
+*.ver
+*.rej
+*.orig
+*.bak
+*.apk
+*.class
+*.dwo
+*.wget-hsts
+
+# Windows specific generated files
+*.exp
+*.ilk
+*.ncb
+*.pdb
+*.suo
+*.sdf
+*.opensdf
+*.vcproj.*.user
+*.vcxproj.*.user
+*.vcxproj.user
+*.obj
+*.idb
+*ReSharper*
+*.idb
+*.diagsession
+
+# osx specifics
+/kodi.build/
+/Debug/
+/Release/
+.DS_Store
+*.dSYM
+._*
+*project.xcworkspace
+*xcuserdata
+.libs/
+.deps/
+__.SYMDEF*
+
+# CMake project files
+CMakeCache.txt
+CMakeFiles
+CMakeScripts
+CTestTestfile.cmake
+cmake_install.cmake
+
+# Eclipse project files. Not needed as they are generated in two clicks if needed.
+.settings
+.project
+.cproject
+
+/nbproject
+
+/*.diff
+/*.patch
+/build*/
+
+# clangd index
+.cache/
